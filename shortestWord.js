@@ -11,4 +11,4 @@ function findShort(s) {
     return sortedEmptyArray[0]
 }
 
-findShort("bitcoin take over the world maybe who knows perhaps")
+findShort("bitcoin take over the world maybe who knows perhaps") 
