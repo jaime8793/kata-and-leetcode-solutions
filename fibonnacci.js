@@ -8,6 +8,8 @@ function fibonacci(n) {
       fibsArray[fibsArray.length - 2] + fibsArray[fibsArray.length - 1]
     );
   }
+    console.log(fibsArray)
+    return fibsArray
 }
 
 fibonacci(6);
