@@ -1,8 +1,4 @@
-/**
- * The main sorting Array
- * @param {array} arr Array in question
- * @returns Sorted array
- */
+
 const mergeSortRec = (arr) => {
   if (arr.length === 0) return "Please provide a non empty array!";
   if (arr.length === 1) return arr;
@@ -15,7 +11,6 @@ const mergeSortRec = (arr) => {
 };
 
 const merge = (leftArr, rightArr) => {
-  //To merge the both incoming arrays
   const result = [];
 
   let iL = 0;
@@ -44,6 +39,6 @@ const merge = (leftArr, rightArr) => {
   return result;
 };
 
-console.log(mergeSortRec([])); // []
-console.log(mergeSortRec([10, 7, 8, 9, 1, 5])); // [1, 5, 7, 8, 9, 10]
+console.log(mergeSortRec([]));
+console.log(mergeSortRec([10, 7, 8, 9, 1, 5]));
 console.log(mergeSortRec([30, 20, 10, 50, 22, 33, 55]));
