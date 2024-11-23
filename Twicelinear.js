@@ -6,7 +6,7 @@ function dblLinear(n) {
     arraySequence.push(y);
     arraySequence.push(z);
   }
-  //console.log(arraySequence);
+  
   let digits = [];
   arraySequence.map((digit) => {
     if (!digits.includes(digit)) {
