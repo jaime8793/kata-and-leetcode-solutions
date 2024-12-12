@@ -15,7 +15,7 @@ function scramble(str1, str2) {
 
   return true;
 }
-
+//heyyy
 // Test cases
 console.log(scramble("rkqodlw", "world")); // true
 console.log(scramble("jscripts", "javascript")); // false
