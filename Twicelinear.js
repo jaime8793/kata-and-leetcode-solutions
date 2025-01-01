@@ -20,7 +20,7 @@ function dblLinear(n) {
   let soretedDigits = digits.sort((a, b) => {
     return a - b;
   });
-    //console.log(soretedDigits)
+    
     console.log(soretedDigits[n]);
   return soretedDigits[n];
 }
