@@ -3,7 +3,7 @@ function fibsRec(n) {
   if (n === 1) return [0];
   if (n === 2) return [0, 1];
 
-  // Recursive call
+  
   const fibsArray = fibsRec(n - 1); // Get the Fibonacci sequence up to (n-1)
 
   // Add the next Fibonacci number to the array
