@@ -14,4 +14,3 @@ function accum(s) {
   console.log(stringArray.substring(0, stringArray.length - 1));
   return stringArray.substring(0, stringArray.length - 1);
 }
-
