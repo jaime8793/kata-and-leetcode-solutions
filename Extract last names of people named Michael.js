@@ -10,6 +10,8 @@ function getMichaelLastName(inputText) {
       /^[A-Z]/.test(splitedString[i + 1].charAt(0))
     ) {
       // Remove punctuation from next word
+      //this is not working
+      
       let nextName = splitedString[i + 1].replace(
         /[.,\/#!$%\^&\*;:{}=\-_`~()]/g,
         ""
@@ -21,6 +23,6 @@ function getMichaelLastName(inputText) {
   console.log(nextNameArray);
 }
 
-getMichaelLastName(
+console.log(getMichaelLastName(
   "Michael, how are you? - Cool, how is John Williamns and Michael Jordan? I don't know but Michael Johnson is fine. Michael do you still score points with LeBron James, Michael Green AKA Star and Michael Wood?"
-);
+));
