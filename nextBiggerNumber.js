@@ -1,22 +1,22 @@
 function nextBigger(n) {
   //your code here
-  let splitedNumber = n.toString().split("");
-  let digits = splitedNumber.map((digit) => {
-    return Number(digit);
-  });
-   let sortedDigits =  digits.sort((a, b) => {
-        return b-a
-   })
-    console.log(splitedNumber, digits, sortedDigits.join(""));
-    let joinedDigits = sortedDigits.join("")
-    console.log(Number(joinedDigits))
-    let joinedDigitsNumber = Number(joinedDigits);
-    if (n === joinedDigitsNumber) {
-        return -1
-    } else {
-        return joinedDigitsNumber
+  let stringArray = n.toString().split("");
+  let ied = stringArray.length;
+  function arraymove(arr, fromIndex, toIndex) {
+    let element = arr[fromIndex];
+    arr.splice(fromIndex, 1);
+    arr.splice(toIndex, 0, element);
+    return arr
+  }
+  for (i = ied - 1; i >= 0; i--) {
+    for (j = ied - 1; j >= 0; j--){
+      
     }
-  
+      if (Number(stringArray[i]) > Number(stringArray[i - 1])) {
+        arraymove(n, i, i - 1);
+      } else {
+        return -1;
+      }
+  }
 }
-nextBigger(144);
-//note this code returned biggest number 
+nextBigger(1443);
