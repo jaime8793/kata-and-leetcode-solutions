@@ -10,7 +10,7 @@ function ipsBetween(start, end) {
     j += -1;
   }
   let sum = 0;
-  let sum2 = 0;
+  let sum2 = 0; //rename
   for (let i = 0; i < addedIsp.length; i++) {
     sum += addedIsp[i];
     sum2 += addedIsp2[i];
