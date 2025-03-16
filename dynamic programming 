@@ -11,7 +11,7 @@ var lengthOfLIS = function(nums) {
             }
         }
     }
-
+//concat
     return Math.max(...dp); // The longest subsequence length
 };
 
