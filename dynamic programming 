@@ -14,6 +14,3 @@ var lengthOfLIS = function(nums) {
 //concat
     return Math.max(...dp); // The longest subsequence length
 };
-
-// Example usage
-console.log(lengthOfLIS([10,9,2,5,3,7,101,18])); // Output: 4
