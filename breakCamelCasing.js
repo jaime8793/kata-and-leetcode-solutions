@@ -10,6 +10,6 @@ function solution(string) {
             newString.push(splitedString[i])
         }
     }
-  return newString.join("");
+  return newString.join();
 }
 console.log(solution("camelCasingTest"));

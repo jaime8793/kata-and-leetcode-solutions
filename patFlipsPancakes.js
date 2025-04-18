@@ -5,3 +5,5 @@ function flip(stack) {
   return [];
 }
 flip([4, 1, 3, 2, 4, 6, 3, 9, 1]);
+
+//cool apss
