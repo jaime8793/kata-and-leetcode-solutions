@@ -1,4 +1,5 @@
 function ipsBetween(start, end) {
+//post it now
   splitedIspStart = start.split(".");
   splitedIspEnd = end.split(".");
   let addedIsp = [];
@@ -10,7 +11,7 @@ function ipsBetween(start, end) {
     j += -1;
   }
   let sum = 0;
-  let sum2 = 0;
+  let sum2 = 0; //rename to the best
   for (let i = 0; i < addedIsp.length; i++) {
     sum += addedIsp[i];
     sum2 += addedIsp2[i];
