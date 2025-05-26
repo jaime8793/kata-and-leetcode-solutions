@@ -3,12 +3,14 @@ function bouncingBall(h, bounce, window) {
 
   if (h > 0 && bounce > 0 && bounce < 1 && window < h) {
     let newBounce = 1;
-    for (; h > window; ) {
-      newBounce++;
-      h = h * bounce;
+    let newHeight = h * bounce
+    while ( newHeight > window ) {
+     
+      newHeight *=  bounce;
+       newBounce += 2;
     }
-    let newbounce2 = newBounce * 2;
-    return newbounce2 - 3;
+    let newbounce2 = newBounce
+    return newbounce2;
   } else {
     return -1;
   }
