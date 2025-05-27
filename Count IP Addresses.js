@@ -19,4 +19,4 @@ function ipsBetween(start, end) {
     console.log(sum2-sum)
   return sum2 - sum;
 }
-ipsBetween("150.10.0.0", "150.0.0.1");
+ipsBetween("150.10.0.0", "255.255.255.255");
