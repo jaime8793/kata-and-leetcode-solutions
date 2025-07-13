@@ -12,6 +12,6 @@ function rot13(message) {
         }
     })
   console.log(rot13Message);
-}
+}//cool
 
 rot13("Cream")
