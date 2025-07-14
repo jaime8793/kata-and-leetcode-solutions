@@ -1,16 +1,17 @@
 function isAnagram(s,t) {
-    const setGram = new Set()
-    const splitedS = s.split("")
-    setGram.add(splitedS)
-    console.log(splitedS)
-    const splitedT = t.split("")
-    console.log(setGram.has(splitedT))
-    for (i = 0; i >= splitedS.length; i++){
-        if (splitedS.has(splitedT[i]) === true) {
-            re
-        }
-    }
-}
+    if (s.length !== t.length) return false;
 
+    const count = {};
+
+    for (let char of s) {
+        count[char] = (count[char] || 0) + 1;
+    }
+
+    for (let char of t) {
+        if (!count[char]) return false;
+        count[char]--;
+    }
+
+    return true;
 
 isAnagram("racecar", "carrace");
